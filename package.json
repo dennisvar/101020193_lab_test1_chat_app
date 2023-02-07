@@ -1,0 +1,25 @@
+{
+  "name": "101020193_lab_test1_chat_app",
+  "version": "1.0.0",
+  "description": "COMP 3133 Lab Test 1 (06%) Due Date: 07th Feb 2023 6:00 PM",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "comp3133",
+    "lab test",
+    "chat"
+  ],
+  "author": "Dennis Varghese",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1",
+    "socket.io": "^4.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
