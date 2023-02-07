@@ -4,7 +4,8 @@ const userSchema = new mongoose.Schema({
     username: {
         type: String,
         required: true,
-        trim: true      
+        trim: true,
+        unique: true
     },
     firstname: {
         type: String,
@@ -23,6 +24,7 @@ const userSchema = new mongoose.Schema({
     },
     created_on: {
         type: Date,
+        default: Date.now
     }
 });
 

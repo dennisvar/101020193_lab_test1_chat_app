@@ -15,6 +15,7 @@ const privateMessageSchema = new mongoose.Schema({
     },
     date_sent: {
         type: Date,
+        default: Date.now
     }
 });
 

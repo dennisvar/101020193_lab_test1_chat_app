@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>chat</title>
-    </head>
-    <body>
+<html>
+   <head>
+      <title>Hello world</title>
+   </head>
+   <script src="/socket.io/socket.io.js"></script>
+   <script>
 
-    </body>
+   </script>
+   <body>
+      <div>
+        <a href="/"><button>Leave Room</button></a>
+        <div>
+            <div>
+                <form action="/chat">
+                    <label>Select Room</label>
+                    <select id="room" name="room">
+                        <option value="news">news</option>
+                        <option value="covid19">covid19</option>
+                        <option value="nodeJS">nodeJS</option>
+                    </select>
+                    <button>Select</button>
+                </form>
+            </div>
+            <div id="message">
+                <div id="display">
+                    <div class="message">
+                    </div>
+                </div>
+    
+                <div>
+                    <form action="/chat">
+                        <input id="msg" type="text">
+                        <button>Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   </body>
 </html>
+

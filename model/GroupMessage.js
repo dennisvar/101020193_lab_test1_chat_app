@@ -15,7 +15,8 @@ const groupMessageSchema = new mongoose.Schema({
         required: true
     },
     date_sent: {
-        type: Date
+        type: Date,
+        default: Date.now
     }
 });
 
